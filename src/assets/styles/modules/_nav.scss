@@ -1,0 +1,19 @@
+.nav {
+    padding: 30px;    
+    a {
+        font-weight: bold;
+        color: #2c3e50;
+        &.router-link-exact-active {
+            color: #42b983;
+        }
+    }
+    .navbar {
+        border-bottom: 0.055rem solid #00a8e1;
+    }    
+}
+
+h1 {
+    color: #005695 !important;
+    text-transform: uppercase;    
+}
+

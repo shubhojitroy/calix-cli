@@ -1,29 +1,31 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <div class="nav">
+      <!-- <router-link to="/">Home</router-link> |
+      <router-link to="/about">About</router-link> -->
+      <navigation />
     </div>
-    <router-view/>
+    <main>
+      <router-view/>
+    </main>
+    <footer-part />
   </div>
 </template>
 
+<script>
+// @ is an alias to /src
+import Navigation from '@/components/Navigation.vue';
+import FooterPart from '@/components/FooterPart.vue';
+
+export default {
+  name: 'app',
+  components: {
+    Navigation,
+    FooterPart,
+  },
+};
+</script>
+
 <style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-#nav {
-  padding: 30px;
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
+@import '../src/assets/styles/style.scss';
 </style>

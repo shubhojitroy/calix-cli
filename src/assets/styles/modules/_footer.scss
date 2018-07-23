@@ -1,0 +1,13 @@
+.footer {
+    position: fixed;
+    flex: 0 0 48px;
+    padding: 1.5rem 1rem;
+    background-color: $footer-bg-color;
+    color: $footer-color;
+    line-height: normal;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    bottom: 0;    
+    min-width: 100%;
+  }

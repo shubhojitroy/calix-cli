@@ -1,0 +1,12 @@
+.button {
+    color: $footer-color;
+    background-color: $button-bg-color !important;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0 40px; 
+
+    &:hover {
+        background-color: $mainOrange !important;  
+        transition: 0.25s ease-out;
+    }
+}
